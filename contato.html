@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receitas Fit | Contato</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container barra">
+      <a class="logo" href="index.html">Receitas Fit</a>
+      <nav aria-label="Navegação principal">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="receitas.html">Receitas</a></li>
+          <li><a class="ativo" href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="titulo-pagina">
+      <div class="container">
+        <h1>Contato</h1>
+        <p>Envie uma dúvida, sugestão ou ideia de receita.</p>
+      </div>
+    </section>
+
+    <section class="secao container contato-grid">
+      <div>
+        <h2>Envie uma mensagem</h2>
+        <form class="formulario" action="php/criar.php" method="post">
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" maxlength="100" required>
+
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" maxlength="150" required>
+
+          <label for="assunto">Assunto</label>
+          <input id="assunto" name="assunto" type="text" maxlength="150" required>
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+
+          <button class="botao" type="submit">Enviar</button>
+        </form>
+      </div>
+
+      <aside class="informacoes">
+        <h2>Informações</h2>
+        <p><strong>E-mail:</strong> contato@receitasfit.com</p>
+        <p><strong>Telefone:</strong> (11) 99999-9999</p>
+        <p><strong>Horário:</strong> Segunda a sexta, das 08h às 18h.</p>
+        <h3>Redes sociais</h3>
+        <p>Instagram: @receitasfit</p>
+        <a class="link-admin" href="php/listar.php">Administrar mensagens</a>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>Receitas Fit — alimentação saudável e acessível.</p>
+      <p>&copy; 2026 Receitas Fit</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
