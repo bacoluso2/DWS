@@ -51,7 +51,7 @@ A pasta `docs/` contém a versão estática do site, com Home, Receitas, Contato
 3. Selecione a branch **main** e a pasta **/docs** e clique em **Save**.
 4. Aguarde a publicação e confira as três páginas no endereço informado pelo GitHub.
 
-Endereço previsto após a ativação: https://bacoluso2.github.io/DWS/
+Site publicado e verificado: https://bacoluso2.github.io/DWS/
 
 **Atenção:** o GitHub Pages não executa PHP nem MySQL. O formulário público é demonstrativo e não envia mensagens; o CRUD continua disponível na versão local, seguindo as instruções do XAMPP acima. Somente a pasta `docs/` deve ser publicada.
 
