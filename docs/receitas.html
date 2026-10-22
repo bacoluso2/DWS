@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receitas Fit | Receitas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container barra">
+      <a class="logo" href="index.html">Receitas Fit</a>
+      <nav aria-label="Navegação principal">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="ativo" href="receitas.html">Receitas</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="titulo-pagina">
+      <div class="container">
+        <h1>Receitas</h1>
+        <p>Encontre uma opção saudável para cada momento do dia.</p>
+      </div>
+    </section>
+
+    <section class="secao container">
+      <div class="filtros">
+        <div>
+          <label for="busca">Buscar receita</label>
+          <input id="busca" type="search" placeholder="Buscar receitas...">
+        </div>
+        <div>
+          <label for="categoria">Categoria</label>
+          <select id="categoria">
+            <option value="todas">Todas as categorias</option>
+            <option value="cafe">Café da manhã</option>
+            <option value="almoco">Almoço</option>
+            <option value="jantar">Jantar</option>
+            <option value="lanche">Lanches</option>
+          </select>
+        </div>
+      </div>
+
+      <p id="sem-resultados" class="aviso oculto">Nenhuma receita encontrada.</p>
+
+      <div id="lista-receitas" class="grade receitas">
+        <article class="card receita" data-nome="Panqueca de banana" data-categoria="cafe">
+          <div class="imagem-placeholder">Imagem da panqueca</div>
+          <div class="card-conteudo"><span>Café da manhã</span><h2>Panqueca de banana</h2><p>Banana, aveia e ovo em uma receita rápida.</p></div>
+        </article>
+        <article class="card receita" data-nome="Iogurte com frutas" data-categoria="cafe">
+          <div class="imagem-placeholder">Imagem do iogurte</div>
+          <div class="card-conteudo"><span>Café da manhã</span><h2>Iogurte com frutas</h2><p>Uma combinação leve para começar o dia.</p></div>
+        </article>
+        <article class="card receita" data-nome="Frango com legumes" data-categoria="almoco">
+          <div class="imagem-placeholder">Imagem do frango</div>
+          <div class="card-conteudo"><span>Almoço</span><h2>Frango com legumes</h2><p>Refeição equilibrada, colorida e prática.</p></div>
+        </article>
+        <article class="card receita" data-nome="Salada de grao de bico" data-categoria="almoco">
+          <div class="imagem-placeholder">Imagem da salada</div>
+          <div class="card-conteudo"><span>Almoço</span><h2>Salada de grão-de-bico</h2><p>Salada nutritiva com vegetais frescos.</p></div>
+        </article>
+        <article class="card receita" data-nome="Sopa de legumes" data-categoria="jantar">
+          <div class="imagem-placeholder">Imagem da sopa</div>
+          <div class="card-conteudo"><span>Jantar</span><h2>Sopa de legumes</h2><p>Uma opção leve e aconchegante para a noite.</p></div>
+        </article>
+        <article class="card receita" data-nome="Sanduiche natural" data-categoria="lanche">
+          <div class="imagem-placeholder">Imagem do sanduíche</div>
+          <div class="card-conteudo"><span>Lanche</span><h2>Sanduíche natural</h2><p>Lanche simples com pão integral e vegetais.</p></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>Receitas Fit — alimentação saudável e acessível.</p>
+      <p>&copy; 2026 Receitas Fit</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
