@@ -41,3 +41,41 @@ flowchart TD
 - `img/`: arquivos de imagem do projeto.
 - `config/`: conexão com o banco de dados.
 - `php/`: operações de cadastrar, listar, editar e excluir.
+
+## Publicação no GitHub Pages
+
+A pasta `docs/` contém a versão estática do site, com Home, Receitas, Contato, CSS e pesquisa de receitas em JavaScript.
+
+1. Abra **Settings → Pages** no repositório.
+2. Em **Source**, escolha **Deploy from a branch**.
+3. Selecione a branch **main** e a pasta **/docs** e clique em **Save**.
+4. Aguarde a publicação e confira as três páginas no endereço informado pelo GitHub.
+
+Endereço previsto após a ativação: https://bacoluso2.github.io/DWS/
+
+**Atenção:** o GitHub Pages não executa PHP nem MySQL. O formulário público é demonstrativo e não envia mensagens; o CRUD continua disponível na versão local, seguindo as instruções do XAMPP acima. Somente a pasta `docs/` deve ser publicada.
+
+Referência: https://docs.github.com/pt/pages/getting-started-with-github-pages/creating-a-github-pages-site
+
+## Versionamento e entrega
+
+O planejamento, as mensagens dos commits e os links para entregar ao professor estão em [PLANEJAMENTO.md](PLANEJAMENTO.md).
+
+Para ter uma cópia local com o histórico completo:
+
+```bash
+git clone https://github.com/bacoluso2/DWS.git
+cd DWS
+git remote -v
+git log --oneline
+```
+
+O clone já inicializa o Git e configura `origin`. Não é necessário executar `git init` novamente.
+
+Para registrar e publicar futuras mudanças:
+
+```bash
+git add caminho/do/arquivo
+git commit -m "Descreve a alteração realizada"
+git push origin main
+```
