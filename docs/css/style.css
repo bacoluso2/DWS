@@ -389,3 +389,84 @@ button:disabled {
   cursor: not-allowed;
   opacity: 0.65;
 }
+
+/* Busca de receitas externas. */
+.api-receitas {
+  border-top: 1px solid var(--borda);
+}
+
+.form-api {
+  align-items: end;
+  display: flex;
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.form-api > div {
+  flex: 1;
+  min-width: 0;
+}
+
+.form-api label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-api button {
+  flex-shrink: 0;
+}
+
+.form-api button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.receita-api {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.receita-api > h3 {
+  padding: 0;
+  text-align: left;
+  color: var(--azul-escuro);
+  font-size: 1.2rem;
+}
+
+.receita-api h4,
+.receita-api details {
+  margin-top: 16px;
+}
+
+.receita-api ul {
+  padding-left: 20px;
+}
+
+.receita-api summary {
+  color: var(--azul);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.receita-api details p {
+  margin-top: 10px;
+  white-space: pre-line;
+}
+
+.fonte-api {
+  color: var(--cinza);
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+.fonte-api a {
+  text-decoration: underline;
+}
+
+@media (max-width: 560px) {
+  .form-api {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}

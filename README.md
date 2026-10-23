@@ -79,3 +79,23 @@ git add caminho/do/arquivo
 git commit -m "Descreve a alteração realizada"
 git push origin main
 ```
+
+## Semana 2 — Consumo de API pública
+
+A página **Receitas** agora possui a seção **Explore receitas do mundo**, que consulta a API pública TheMealDB com `async/await` e `fetch()`:
+
+```text
+https://www.themealdb.com/api/json/v1/1/search.php?s=banana
+```
+
+- Digite um nome em inglês, como `banana` ou `chicken`, e clique em **Buscar novas receitas**.
+- O JSON atualiza os cards com nome, categoria, origem, ingredientes e modo de preparo, sem recarregar a página.
+- A interface mostra carregamento, nenhum resultado e mensagens amigáveis em caso de falha. A requisição é encerrada após 15 segundos sem resposta.
+- O arquivo `js/api-receitas.js` contém a integração; `docs/js/api-receitas.js` publica o mesmo código no Pages. Os filtros do catálogo inicial continuam independentes da consulta online.
+- A chave pública de teste `1` é indicada pela TheMealDB para aprendizado e uso educacional. As receitas externas não são classificadas automaticamente como saudáveis.
+
+Planejamento da funcionalidade e cenários de teste: [PLANEJAMENTO_API.md](PLANEJAMENTO_API.md).
+
+Documentação oficial: https://www.themealdb.com/docs_api_guide.php
+
+A API REST própria em Flask pertence às próximas etapas do bimestre. Nesta entrega, a integração usa a API pública solicitada.

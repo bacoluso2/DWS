@@ -75,6 +75,21 @@
         </article>
       </div>
     </section>
+    <section id="receitas-online" class="secao container api-receitas" aria-labelledby="titulo-api">
+      <h2 id="titulo-api">Explore receitas do mundo</h2>
+      <p>Encontre outras ideias para cozinhar. A busca e os resultados da TheMealDB estão em inglês; experimente <strong>banana</strong> ou <strong>chicken</strong>.</p>
+      <form id="form-api-receitas" class="form-api">
+        <div>
+          <label for="busca-api">Nome da receita em inglês</label>
+          <input id="busca-api" name="receita" type="search" placeholder="Ex.: banana" minlength="2" maxlength="80" required>
+        </div>
+        <button id="botao-api" class="botao" type="submit">Buscar novas receitas</button>
+      </form>
+      <p id="mensagem-api" class="aviso" role="status" aria-live="polite" aria-atomic="true">Digite um nome para consultar novas receitas.</p>
+      <div id="resultados-api" class="grade receitas" aria-busy="false"></div>
+      <p class="fonte-api">Fonte: <a href="https://www.themealdb.com/" target="_blank" rel="noopener noreferrer">TheMealDB</a>. As receitas externas não possuem classificação nutricional no Receitas Fit.</p>
+      <noscript>Ative o JavaScript para usar a busca de receitas online.</noscript>
+    </section>
   </main>
 
   <footer class="rodape">
@@ -84,5 +99,6 @@
     </div>
   </footer>
   <script src="js/script.js"></script>
+  <script src="js/api-receitas.js"></script>
 </body>
 </html>
