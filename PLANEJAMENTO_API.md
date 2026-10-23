@@ -38,6 +38,8 @@ A mensagem de estado possui `role="status"` e `aria-live="polite"`. Durante a co
 
 Os cenários simulados testam o código sem provocar falhas no serviço externo. Para repetir os dois testes principais no site, pesquise `banana` e depois `zzzzreceitainexistentezzzz` na nova seção. A busca do catálogo inicial continua funcionando separadamente.
 
+**Conferência final no GitHub Pages (23/10/2026):** os dois cenários principais foram repetidos no navegador do site publicado. A busca `banana` exibiu cinco cards e o modo de preparo; `zzzzreceitainexistentezzzz` exibiu o aviso de nenhum resultado. A pesquisa do catálogo original também foi conferida e continuou independente da API.
+
 ## Arquivos da funcionalidade
 
 - `receitas.html` e `docs/receitas.html`: formulário, mensagem acessível e área de resultados.
